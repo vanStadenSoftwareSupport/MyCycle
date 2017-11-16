@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MyCycle.TripListPage">
+	<ContentPage.Content>
+        <ListView x:Name="lstTrips" Margin="6, 20,0,0">
+             <ListView.ItemTemplate>
+            <DataTemplate>
+               <ViewCell>
+                        <Grid>
+                            <Label Grid.Row = "0"  Text="{Binding StartDate, StringFormat='{0:MMMM dd, yyyy HH:mm:ss}'}" FontAttributes="Bold" FontSize="16" TextColor="Navy"/>
+                            <Label Grid.Row = "1" Grid.Column = "0" FontAttributes="Bold">Distance</Label> <Label  Grid.Row = "1" Grid.Column = "1" Text="{Binding DistanceInMeters}"/>    
+                        </Grid>
+                    
+               </ViewCell>
+            </DataTemplate>
+         </ListView.ItemTemplate>
+        </ListView>
+	</ContentPage.Content>
+</ContentPage>

@@ -8,7 +8,7 @@ namespace MyCycle
         {
             InitializeComponent();
 
-            MainPage = new MyCyclePage();
+            MainPage = new TripListPage();
         }
 
         protected override void OnStart()
